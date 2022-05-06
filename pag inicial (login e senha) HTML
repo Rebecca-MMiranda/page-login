@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login </title>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>Entrar</h1>
+        <form name="login" onsubmit="return validar()" method="post">
+            <div class="label-float">
+                <input type="text" id="usuario" name="usuario" placeholder="">
+                <label for="usuario">Usuario</label>
+            </div>
+            <div class="label-float">
+                <input type="password" id="senha" name="senha" placeholder="">
+                <label for="usuario">Senha</label>
+            </div>
+            <div class="justify-center">
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+        <div class="justify-center">
+            <hr>
+        </div>
+
+        <p>Não tem uma conta?
+            <a href="#">Cadrastre-se</a>
+        </p>
+    </div>
+</div>
+<script>
+    function validar() {
+        if (document.login.usuario.value == "") {
+            alert("Forneça o nome do usuário");
+            document.login.usuario.focus();
+            return false;
+        } else if (document.login.senha.value == "") {
+            alert("Forneça a senha do usuário");
+            document.login.senha.focus();
+            return false;
+        } else {
+            alert("Acesso permitido");
+            return true;
+        }
+    }
+</script>
+</body>
+</html>
