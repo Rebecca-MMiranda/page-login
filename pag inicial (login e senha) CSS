@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 & family= Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800 & family= Source+Sans+Pro:ital,wght@0,200;0,300;0,400; 0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900 & display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+background-image: url(https://i.imgur.com/2RFWfBi.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.card{
+background-color: #ffffff80;
+padding: 30px;
+border-radius: 4%;
+box-shadow: 3px 3px 1px 0px #00000060;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2F3E6C;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0ch;
+    border-bottom: 2px solid #2F3E6C;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+    border-radius: 0;
+}
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-top: 5px;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #113C6C;
+}
+
+.label-float label{
+color: #2F3E6C;
+pointer-events: none;
+position: absolute;
+top: 0;
+left: 0;
+margin-top: 13px;
+transition: all .3s ease-out;
+} 
+
+.label-float input:focus + label{
+font-size: 13px;
+margin-top: 0;
+color: #113C6C;
+}
+
+button{
+    background-color: transparent;
+    border-color: #2F3E6C;
+    color: #2F3E6C;
+    padding: 7px;
+    font-weight: bold;
+    font-size:  12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease-out;
+}
+
+button:hover{
+    background-color: #2F3E6C;
+    color: white;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+p{
+    color: #2F3E6C;
+    font-size: 14pt;
+    text-align: center;
+}
+
+a{
+color: #775B84;
+font-weight: bold;
+text-decoration: none;
+}
+
+a:hover{
+    color: #2F3E6C;
+    transition: all .3s ease-out;
+}
